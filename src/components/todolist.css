@@ -1,0 +1,66 @@
+.title{
+    text-decoration: underline;
+}
+
+.taskInput{
+    margin-left: 5px;
+    width: 300px;
+    border: none;
+    border-bottom: solid thin  rgb(88, 47, 238);
+    padding: 5px;
+}
+
+.taskInput:focus{
+    outline: none;
+    border: solid 3px rgb(88, 47, 238);
+    border-radius: 4px;
+}
+
+.task-list{
+    background-color: rgb(88, 47, 238);
+    color: white;
+    border-radius: 5px;
+}
+
+.task{
+    background-color: white;
+    color: black;
+    width: 95%;
+    display: inline-block;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: large;
+}
+
+.task-button{
+    float: right;
+}
+
+.status{
+    border: solid 1px rgb(28, 7, 103);
+    margin: 0px 4px;
+    color: rgb(28, 7, 103);
+    padding:0 10px;
+    border-radius: 15px;
+}
+
+.btn{
+    border: solid 1px rgb(28, 7, 103);
+    margin: 0px 4px;
+    background-color: rgb(88, 47, 238);
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: rgb(68, 34, 193);
+}
+.btn:disabled{
+    background-color: rgb(98, 98, 98);
+}
+
+.done-task{
+    color: green;
+    text-decoration: line-through;
+}
