@@ -1,66 +1,88 @@
-.title{
-    text-decoration: underline;
+.title {
+  text-decoration: underline;
+  color: rgb(88, 47, 238);
+}
+.container {
+  background-color: rgb(215, 206, 255);
+  margin: auto;
+  width: 70%;
+  margin-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 40px;
+  border: 2px solid rgb(88, 47, 238);
+  box-shadow: 1px 1px 20px rgb(88, 47, 238);
 }
 
-.taskInput{
-    margin-left: 5px;
-    width: 300px;
-    border: none;
-    border-bottom: solid thin  rgb(88, 47, 238);
-    padding: 5px;
+.taskInput {
+  width: 300px;
+  border: none;
+  border-bottom: solid 3px rgb(88, 47, 238);
+  padding: 5px;
+  background-color: rgb(215, 206, 255);
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px 2px white;
 }
 
-.taskInput:focus{
-    outline: none;
-    border: solid 3px rgb(88, 47, 238);
-    border-radius: 4px;
+.taskInput:focus {
+  outline: none;
+  border: solid 3px rgb(88, 47, 238);
 }
 
-.task-list{
-    background-color: rgb(88, 47, 238);
-    color: white;
-    border-radius: 5px;
+.task-list {
+  background-color: rgb(88, 47, 238);
+  padding-bottom: 10px;
+  width: 90%;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px 5px white;
 }
 
-.task{
-    background-color: white;
-    color: black;
-    width: 95%;
-    display: inline-block;
-    margin: 2px;
-    padding: 4px;
-    border-radius: 2px;
-    font-size: large;
+.task {
+  background-color: rgb(215, 206, 255);
+  border: 3px solid white;
+  color: rgb(88, 47, 238);
+  width: 95%;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 16px;
+  font-size: large;
+  word-wrap: break-word;
+  font-weight: bold;
 }
 
-.task-button{
-    float: right;
+.task-button {
+  float: right;
 }
 
-.status{
-    border: solid 1px rgb(28, 7, 103);
-    margin: 0px 4px;
-    color: rgb(28, 7, 103);
-    padding:0 10px;
-    border-radius: 15px;
+.status {
+  background-color: white;
+  margin: 0px 4px;
+  color: rgb(88, 47, 238);
+  padding: 5px;
+  border-radius: 15px;
+  float: left;
+  font-weight: 500;
 }
 
-.btn{
-    border: solid 1px rgb(28, 7, 103);
-    margin: 0px 4px;
-    background-color: rgb(88, 47, 238);
-    color: white;
-    padding: 4px;
-    border-radius: 2px;
+.btn {
+  margin: 0px 4px;
+  background-color: rgb(88, 47, 238);
+  color: white;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: large;
+  border: 1px solid white;
+  box-shadow: 1px 1px 20px 2px white;
 }
-.btn:hover{
-    background-color: rgb(68, 34, 193);
+.btn:hover {
+  background-color: rgb(68, 34, 193);
 }
-.btn:disabled{
-    background-color: rgb(98, 98, 98);
+.btn:disabled {
+  background-color: rgb(98, 98, 98);
 }
 
-.done-task{
-    color: green;
-    text-decoration: line-through;
+.done-task {
+  color: green;
+  text-decoration: line-through;
 }

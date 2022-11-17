@@ -1,9 +1,13 @@
 import './App.css';
-import Todolist from './components/todolist';
+import TodolistClass from './components/todolistClass';
+import TodolistFunction from './components/todolistFunctional';
 function App() {
   return (
     <div className="App">
-      <Todolist />
+      <h1>Using Class Components</h1>
+      <TodolistClass />
+      <h1>Using Functional Component with Hooks</h1>
+      <TodolistFunction />
     </div>
   );
 }

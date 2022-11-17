@@ -13,9 +13,9 @@ const Task = (props) => {
   } 
   return (
     <div className="task">
-      {taskDetail}
+        {taskDetail}
+      <label className="status">{status}</label>
       <div className="task-button">
-        <label className="status">{status}</label>
       <button className="btn" onClick={props.changeStatus}>Mark {statusChangeAction}</button>
       <button className="btn" onClick={props.editTask}>Edit</button>
       <button className="btn" onClick={props.deleteTask}>Delete</button>

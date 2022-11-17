@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Task from "./task";
 import "./todolist.css"
 
-class Todolist extends Component {
+class TodolistClass extends Component {
   constructor() {
     super();
 
@@ -92,36 +92,19 @@ class Todolist extends Component {
         ></Task>
       );
     });
-    let button;
-    if (this.state.editFlag) {
-      button = (
-        <button
-        className="btn"
-          onClick={() =>
-            this.saveTask(document.getElementById("taskTitle").value)
-          }
-        >
-          Save Task
-        </button>
-      );
-    } else {
-      button = (
-        <button
-        className="btn"
-          onClick={() =>
-            this.addTask(document.getElementById("taskTitle").value)
-          }
-        >
-          Add Task
-        </button>
-      );
-    }
     return (
-      <div>
+      <div className="container">
         <h1 className="title">Todo List:</h1>
         <hr></hr>
         <input className="taskInput" type="text" id="taskTitle"></input>
-        {button}
+        <button
+        className="btn"
+          onClick={this.state.editFlag?() =>
+            this.saveTask(document.getElementById("taskTitle").value):() =>this.addTask(document.getElementById("taskTitle").value)
+          }
+        >
+          {this.state.editFlag?"Save Task":"Add Task"}
+        </button>
         <div className="task-list">
         <h2 className="title">Tasks:</h2>
         {tasks}
@@ -132,4 +115,4 @@ class Todolist extends Component {
   }
 }
 
-export default Todolist;
+export default TodolistClass;
